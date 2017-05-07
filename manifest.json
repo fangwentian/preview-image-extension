@@ -19,7 +19,6 @@
                 "./src/css/index.css"
             ],
             "js": [
-                "./src/lib/vue.min.js",
                 "./src/lib/jquery-1.12.4.min.js",
                 "./src/javascript/index.js"
             ]
