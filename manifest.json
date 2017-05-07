@@ -1,0 +1,29 @@
+{
+    "name": "Preview images",
+    "description": "Preview images in the page with silde mode.",
+    "version": "1.0",
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "Preview images in the page.",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": [
+                "./src/css/index.css"
+            ],
+            "js": [
+                "./src/lib/vue.min.js",
+                "./src/lib/jquery-1.12.4.min.js",
+                "./src/javascript/index.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
